@@ -1,0 +1,33 @@
+Alur Project :
+
+1 Membuat Landing Page Portfolio Menggunakan HTML CSS BOOTSTRAP
+- Kita Masih Minimal Untuk Membuat Tampilan Website,
+  Nanti Kedepannya Bakal Ada Lagi Tailwind, Ckhara UI, Bulma, Materialis, Semantic UI (Framework CSS)
+- Bootstrap Sangat Mudah Untuk Dipahami & Diimplementasi
+- Khusus Untuk Pemula Yang Baru Coding
+2. Membuat File style.css => Membuat Menulis Code CSS (Agar Bisa Tampilan Website Supaya Makin Bagus)
+3. Membuat File index.html => Membuat Menulis Code HTML (Kerangka Website)
+4. Dunia Kerja Kebanyakan Text Editor Menggunakan Visual Studio Code dan Intelije Idea
+5. <head></head> => Untuk Membuat Judul Website, Fungsi Balik Layar
+6. Rekomendasikan 2 Minitor Untuk Belajar dan Kerja Karena 1 Monitor Untuk Coding, 1 Minitor Lagi Untuk Mencari Dokumentasi
+7. Inspect Element Untuk Testing
+8. Bootstrap Auto Responsive, Auto Pakai Component / Permudah Kodingan Dan Percepat Pembuatan Website
+- CDN Harus Online Codingnya Supaya Ke Cloud
+- CDN Lebih Ngebut Ambil Resource (Rekomendasikan CDN)
+- Bisa Download Bootstrap Ke Mode Offline
+- Class => Di Pakai Boostrap Jadi 2 Fungsi ? Bisa Dibuat Memanggil CSS Sama Buat Component Boostrap
+- Id => Di Pakai 2 Fungsi ? Bisa Dibuat Memanggil CSS 1X Di 1 File Dan Buat Integrasi Ke Javascript
+- CDN Bootstrap :
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+- CDN Bootstrap Javascript Bundle :
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+    crossorigin="anonymous"></script>
+9. Font Google Berada Di Head HTML
+- Import Font Di style.css
+- Cara Gunakan html, body, * {
+        font-family: 'Kanit', sans-serif;
+}
+10. 
