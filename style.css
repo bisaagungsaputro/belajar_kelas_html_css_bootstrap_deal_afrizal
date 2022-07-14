@@ -8,6 +8,14 @@ html, body, * {
 }
 
 /* 
+- Variable Di CSS
+*/
+:root {
+    --main-color: #76B900;
+    --color_hover: #F12;
+}
+
+/* 
 - Memanggil Class Menggunakan .
 - Menggunakan Nama Class 
 */
@@ -60,7 +68,7 @@ html, body, * {
     - Height => Tinggi (Atas Bawah)
     - Width => lebar (Kiri Kanan)
     */
-    height: 70px;
+    min-height: 70px;
     font-size: 18px;
 }
 
@@ -82,13 +90,14 @@ html, body, * {
     font-size: 4em;
     font-weight: 800;
     letter-spacing: 5px;
-    color: #fff;
+    color: var(--main-color);
 }
 
 .descripsi {
     font-size: 1.3em;
     font-weight: 300;
     letter-spacing: 2px;
+    color: #fff;
 }
 
 .mybg {
@@ -105,6 +114,43 @@ html, body, * {
     Supaya Background Full Screen
     */
     background-size: cover;
+    min-height: 400px;
 }
 
+.subtitle {
+    font-weight: 600;
+    font-size: 2em;
+    letter-spacing: 4px;
+    line-height: 1;
+}
 
+.subdescripsi {
+    font-weight: 600;
+    font-size: 1em;
+    letter-spacing: 2px;
+}
+
+.myinfotek {
+    font-weight: 400;
+}
+
+.subtitlefooter {
+    font-weight: 500;
+    color: var(--main-color);
+    font-size: 2em;
+    letter-spacing: 4px;
+    line-height: 1;
+}
+
+.tess {
+    text-decoration: none;
+    color: #34364a;
+}
+
+a:hover {
+    color: #0000ff;
+}
+
+li {
+    list-style-type: none;
+}

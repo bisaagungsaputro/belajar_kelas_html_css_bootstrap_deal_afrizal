@@ -15,7 +15,7 @@
     <!-- style.css End -->
 
     <!-- CDN Bootstrap 5.2 Start -->
-    
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <!-- CDN Font Awesome 5.2 End -->
@@ -25,6 +25,14 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@100;500;800&display=swap" rel="stylesheet">
     <!-- Font Google Kanit End -->
+
+    <!--Animate CSS Start  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!--Animate CSS End  -->
+
+    <!-- AOS Start -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- AOS End -->
 </head>
 <!-- 
 Navbar, Section, Header, Footer => Semantic HTML 
@@ -36,7 +44,12 @@ Div, Span => Non Semantic HTML
     navbar-light => Membuat Text Menjadi Gelap
  -->
 <!-- Navbar Start -->
-<nav class="navbar navbar-expand-lg my-nav navbar-dark">
+<!-- 
+    navbar => Membuat Menu Navbar 
+    navbar-expand-lg => Membuat Isi Menu Navbar
+-->
+
+<nav class="navbar navbar-expand-lg my-nav navbar-dark sticky-top">
     <!-- 
         container-fruid => Layout Navbar Menjadi Ke Kiri / Lebar
      -->
@@ -61,18 +74,14 @@ Div, Span => Non Semantic HTML
                     Li => List / Menu Navvigation
                  -->
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    <a class="nav-link active" aria-current="page" href="#support">Support</a>
                 </li>
                 <li class="nav-item">
                     <!-- 
                     nav-link active => Warna Cerah Karena Sedang Berada Saat Ini
                     Kalau Tidak Menggunakan active => Karena Bakal Gelap
                 -->
-                    <a class="nav-link" aria-current="page" href="#">Portfolio</a>
-                </li>
-                <li class="nav-item">
-
-                    <a class="nav-link" aria-current="page" href="#">Profile</a>
+                    <a class="nav-link" aria-current="page" href="#portfolio">Portfolio</a>
                 </li>
             </ul>
         </div>
@@ -86,25 +95,142 @@ Div, Span => Non Semantic HTML
 - Div Pertama Pembungkus Utama 
 - Introduction Start
 -->
-<div class="mybg">
-<!-- 
+
+<!-- Introduction Start
+    Syarat Menggunakan align-items-center (Bawaan Bootstrap) => Untuk Membuat Konten Menjadi Tengah
+    Dengan Wajib Menggunakan d-flex (Bawaan Bootstrap) => Flexbox
+    Enakan Flex Atau Grid => Enakan Flex, Walaupun Simpelan Grid Tapi Lebih Pusing
+-->
+<div class="mybg d-flex align-items-center">
+    <!-- 
 container => Layout Konten Menjadi Lebih Ke Kenan / Dalam
 -->
-<div class="container">
-    <!-- 
+    <div class="container">
+        <!-- 
         col => Column
         col => Maksimal Berjumlah 12 Column
      -->
-    <div class="col-6">
-        <h1 class="title">Bisa Agung Saputro</h1>
-        <p class="descripsi">Bisa Agung Saputro Adalah Kami Menyediakan
-            Layanan Pembuatan Aplikasi Termasuk Webiste, Mobile Dan Dekstop Untuk Anda</p>
-        </p>
-    </div>
+        <div class="col-6">
+            <h1 class="title animate__animated animate__lightSpeedInLeft">Bisa Agung Saputro</h1>
+            <p class="descripsi animate__animated animate__lightSpeedInRight">Bisa Agung Saputro Adalah Kami Menyediakan
+                Layanan Pembuatan Aplikasi Termasuk Webiste, Mobile Dan Dekstop Untuk Anda</p>
+            </p>
+        </div>
 
+    </div>
 </div>
+<!-- Introduction End -->
+
+<!-- Konten Support Start -->
+<!-- 
+    mt-4 => Margin Top
+-->
+<!-- my-5 => Margin Vertikal -->
+<div class="my-5 text-center" id="support">
+    <div>
+        <h1 class="title">TEKNOLOGI YANG KAMI PAKAI</h1>
+        <p class="text-dark myinfotek">
+            Website Menggunakan : HTML, CSS, Bootstrap, ReactJS | Database : ExpressJS, MongoDB
+        </p>
+        <p class="text-dark myinfotek">
+            Mobile Menggunakan : Flutter | Database : ExpressJS, MongoDB
+        </p>
+        <div class="text-dark myinfotek">Desain Menggunakan : Inkscape (Illustrator), Figma (UI/UX)
+        </div>
+    </div>
 </div>
-<!-- Konten End -->
+<!-- Konten Support End -->
+
+<!-- Content Product Start -->
+<div class="container text-center mt-5">
+    <div class="row mb-5">
+        <div class="col">
+            <img src="assets/internet.png" alt="Website" height="100" width="100" />
+            <h1 class="subtitle">Website</h1>
+            <a class="subdescripsi" href="hasil_karya.html">Lihat Hasil Karya</a>
+        </div>
+        <div class="col">
+            <img src="assets/mobile-phone.png" alt="Dribbble" height="100" width="100" />
+            <h1 class="subtitle">Mobile</h1>
+            <a class="subdescripsi" href="hasil_karya.html">Lihat Hasil Karya</a>
+        </div>
+        <div class="col">
+            <img src="assets/dribbble.png" alt="Dribbble" height="100" width="100" />
+            <h1 class="subtitle">Dribbble</h1>
+            <a class="subdescripsi" href="hasil_karya.html">Lihat Hasil Karya</a>
+        </div>
+        <div class="col">
+            <img src="assets/behance.png" alt="Dribbble" height="100" width="100" />
+            <h1 class="subtitle">Behance</h1>
+            <a class="subdescripsi" href="hasil_karya.html">Lihat Hasil Karya</a>
+        </div>
+        <div class="col">
+            <img src="assets/youtube.png" alt="Dribbble" height="100" width="100" />
+            <h1 class="subtitle">Youtube</h1>
+            <a class="subdescripsi" href="hasil_karya.html">Lihat Hasil Karya</a>
+        </div>
+    </div>
+</div>
+<!-- Content Product End -->
+
+<!-- Konten Show Start -->
+<div class="bg-dark d-flex align-items-center" id="portfolio">
+    <div class="container mt-4">
+        <div class="row">
+            <div class="text-center">
+                <img src="assets/whatsapp.png" class="img-fluid" alt="portfolio">
+            </div>
+            <div class="text-center mt-4">
+                <h1 class="title">
+                    TESTING
+                </h1>
+                <p>
+                    Kami BAS Menyediakan Jasa Pembuatan Dari Website, Mobile, Desktop
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Konten Show End -->
+
+<!-- Footer Start -->
+<div class="container my-4 px-4">
+    <div class="row">
+        <div class="item-footer col-lg-4 col-12">
+            <h1 class="subtitlefooter">Contact Me</h1>
+            <hr>
+            <p data-aos="fade-up">WhatsApps</p>
+            <p>Email</p>
+            <p>Telegram</p>
+            <p>Discord</p>
+        </div>
+        <div class="item-footer col-lg-4 col-12">
+            <h1 class="subtitlefooter">Follow Me</h1>
+            <hr>
+            <ul>
+                <li>
+                    <a class="tess" href="https://buildwithangga.com/ab-lp-1">Facebook</a>
+                </li>
+                <li>
+                    <a class="tess" href="https://buildwithangga.com/search?keyword=React+JS">React JS</a>
+                </li>
+                <li>
+                    <a class="tess" href="https://buildwithangga.com/ab-lp-1">Youtube</a>
+                </li>
+            </ul>
+        </div>
+        <div class="item-footer col-lg-4 col-12">
+            <h1 class="subtitlefooter">More For Me</h1>
+            <hr>
+            <p>About</p>
+            <p>Help</p>
+            <p>QNA</p>
+            <p>Team Work</p>
+            <p>Loker</p>
+        </div>
+    </div>
+</div>
+<!-- Footer End -->
 
 <!-- CDN Bootstrap Untuk JavaScript Bundle Start -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
@@ -112,6 +238,12 @@ container => Layout Konten Menjadi Lebih Ke Kenan / Dalam
     crossorigin="anonymous"></script>
 <!-- CDN Bootstrap Untuk JavaScript Bundle END  -->
 
+<!-- AOS JavaScript Start -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+  </script>
+<!-- AOS JavaScript End -->
 </body>
 
 </html>

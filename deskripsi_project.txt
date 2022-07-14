@@ -30,4 +30,13 @@ Alur Project :
 - Cara Gunakan html, body, * {
         font-family: 'Kanit', sans-serif;
 }
-10. 
+10. Memberi Komentar Dengan Pencet CTRL + /
+11. href=#support => Untuk Anchor (Saat Dipencet Akan Menuju Halaman Yang Dipilih)
+- Nangkapnya Menggunakan => id=support
+
+
+---
+
+* Tambahan *
+- font-family: Poppins,sans-serif;
+
